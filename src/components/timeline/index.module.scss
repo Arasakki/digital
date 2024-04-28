@@ -1,0 +1,27 @@
+.timeline {
+  &__months {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding-left: 40px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+
+    &_weeks {
+      width: 21px;
+      margin-right: 5px;
+    }
+
+    &_cells {
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      height: #{(15 + 4) * 7}px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.Cell {
+  width: 15px;
+  height: 15px;
+  background-color: #ededed;
+  margin: 1px;
+
+  border: 1px solid #ededed;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &__tooltip {
+    position: relative;
+    transition: all 0.2s ease;
+
+    &_el {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
