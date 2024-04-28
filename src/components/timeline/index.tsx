@@ -1,16 +1,16 @@
-import React, { useState } from "react";
 import s from "./index.module.scss";
 import Cell from "../Cell";
 import Week from "../Week";
 import Month from "../Month";
 import { IDateContr } from "../../types";
+import { FC } from "react";
 interface ITimeLine {
   days: number;
   dataRange: string[];
   contributions: IDateContr[];
 }
 
-const TimeLine: React.FC<ITimeLine> = ({
+const TimeLine: FC<ITimeLine> = ({
   days,
   dataRange,
   contributions,

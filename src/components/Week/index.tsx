@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { FC } from "react";
 import s from "./index.module.scss";
 interface IWeek {
   indexWeek: number;
   startDate?: Date;
 }
 
-const Week: React.FC<IWeek> = ({ indexWeek, startDate }: IWeek) => {
+const Week: FC<IWeek> = ({ indexWeek, startDate }: IWeek) => {
   const weekDays = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
   const dayOfWeek = weekDays[indexWeek];
   if (dayOfWeek === "Пн" || dayOfWeek === "Ср" || dayOfWeek === "Пт") {

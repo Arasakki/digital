@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import TimeLine from "./components/timeline/index";
 import { format, subDays } from "date-fns";
 import { IDateContr } from "./types";
@@ -32,7 +32,6 @@ function App() {
     };
     fetchData();
   }, []);
-  console.log(contributions, "contributions");
 
   return (
     <div className="App">

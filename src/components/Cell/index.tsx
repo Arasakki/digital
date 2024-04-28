@@ -44,10 +44,6 @@ const Cell: FC<ICell> = ({ indexCell, startDate, contributions }: ICell) => {
       <div
         className={`${s.Cell}`}
         style={{ backgroundColor: color }}
-        onClick={() => {
-          console.log(date);
-          console.log(contribution, "contribution");
-        }}
         onMouseEnter={() => {
           setTooltipActive(true);
         }}

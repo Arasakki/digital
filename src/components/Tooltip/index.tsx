@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import s from "./index.module.scss";
 interface ITooltip {
   style?: React.CSSProperties;
